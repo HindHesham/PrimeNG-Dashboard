@@ -1,0 +1,21 @@
+.pi {
+   color: white
+}
+
+.nav-item{
+   padding:2px;
+   margin-left: 7px;
+}
+#right-side{
+   justify-content: flex-end
+}
+
+#menu-icon{
+   padding: 5px;
+}
+#menu-icon i {
+   font-size: 1em;
+}
+.layout-wrapper .topbar .topbar-menu > li > a .topbar-icon:hover ~ .topbar-badge {
+   color: red; 
+}

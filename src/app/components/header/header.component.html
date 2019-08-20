@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div>
+        <!-- <button id="b" pButton type="button" icon="pi pi-bars" class="ui-button" style="background: transparent; border: transparent" (click)="openTab()"></button>   -->
+        <span id="menu-icon">
+            <i class="pi pi-bars" (click)="openTab()"></i> 
+        </span> 
+        <a class="navbar-brand" href="#">Navbar</a>
+       
+    </div>
+   
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact-list">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact-create">Create</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="right-side" class="collapse navbar-collapse">
+        <!-- <div>
+            <i class="pi pi-bell"></i>
+        </div> -->
+
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-4">
+                <div class="ui-inputgroup">
+                    <button pButton type="button" icon="pi pi-search" class="ui-button-success"></button>    
+                    <input type="text" pInputText placeholder="search">         
+                </div>
+            </div>
+        </div>
+
+        <div>
+                <a routerLink="login">
+                        <span matBadge="15" matBadgeColor="warn">
+                                <img src="assets/images/logo.png" width="50px" class="user-avatar" />
+                        </span>
+                </a>
+
+           
+        </div>
+       
+    </div>
+</nav>
+
+<p-sidebar class="menuPanel" [(visible)]="opened" position="left" [showCloseIcon]="true" autoZIndex="true" baseZIndex="99999">
+Sidebar1
+
+</p-sidebar>
